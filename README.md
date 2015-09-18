@@ -1,6 +1,6 @@
 # AngularJS sample app
 
-A sample app for AngularJS 1.x and 2.x
+*A sample app for AngularJS 1.x and 2.x by [@franciov](//twitter.com/franciov)*
 
 ## Best Practices
 
