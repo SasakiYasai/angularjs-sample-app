@@ -17,7 +17,14 @@ $ tsd install angular2 es6-promise rx rx-lite
 
 This will generate the folder `typings` at the root folder of your project.
 
-Run a local HTTP server:
+Make sure you run tsc to create js source files:
+
+```sh
+$ npm install -g typescript@^1.5.0
+$ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators angular2/app/*.ts
+```
+
+Finally, run a local HTTP server:
 
 ```sh
 $ npm install -g http-server
@@ -39,10 +46,3 @@ Make sure you:
 - ask questions ;)
 - send a pull request when tests pass
 - expect a review :)
-
-Make sure you run tsc to create js source files:
-
-```sh
-$ npm install -g typescript@^1.5.0
-$ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators angular2/app/*.ts
-```
