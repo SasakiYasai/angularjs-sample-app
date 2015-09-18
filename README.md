@@ -1,12 +1,12 @@
-# Angular2 sample app
+# AngularJS sample app
 
-A sample app for AngularJS 2 using all the best practices I know / learn
+A sample app for AngularJS 1.x and 2.x
 
 ## Best Practices
 
 https://github.com/franciov/angular2-sample-app/labels/best%20practice
 
-## How to run the app
+## How to run the app (angular2)
 
 Please note that Angular 2 is based on Typescript, so make sure you install tsd:
 
@@ -44,5 +44,5 @@ Make sure you run tsc to create js source files:
 
 ```sh
 $ npm install -g typescript@^1.5.0
-$ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators app/app.ts
+$ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators angular2/app/*.ts
 ```
