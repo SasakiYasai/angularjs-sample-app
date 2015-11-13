@@ -1,8 +1,6 @@
 
-angular.module('myApp', [])
-	.controller('MyAppController', function() {
-
-		this.name = 'Alice';
-
-	});
-	
+angular.module('myApp', 
+	[
+		'ngRoute'
+	]
+);
