@@ -9,15 +9,15 @@
 
 		$routeProvider
 			.when('/attractor', {
-				controller: 'AttractorController',
+				// controller: 'AttractorController',
 				templateUrl: 'app/attractor/attractor.html'
 			})
 			.when('/choice', {
-				controller: 'ChoiceController',
+				// controller: 'ChoiceController',
 				templateUrl: 'app/choice/choice.html'
 			})
 			.when('/recap', {
-				controller: 'RecapController',
+				// controller: 'RecapController',
 				templateUrl: 'app/recap/recap.html'
 			})
 			.otherwise({
