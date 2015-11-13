@@ -1,4 +1,23 @@
+(function() {
+    'use strict';
 
-angular.module('myApp').controller('RecapController', function() {
-	
-});
+    angular
+        .module('sampleApp')
+        .controller('RecapController', RecapController);
+
+    RecapController.$inject = ['$log'];
+
+    /* @ngInject */
+    function RecapController($log) {
+        var vm = this;
+        vm.title = 'RecapController';
+
+        activate();
+
+        ////////////////
+
+        function activate() {
+        	$log.log('RecapController.activate()');
+        }
+    }
+})();
