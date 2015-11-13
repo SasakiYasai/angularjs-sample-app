@@ -31,7 +31,7 @@ $ npm install -g http-server
 $ http-server
 ```
 
-Open your favourite browser and go to http://0.0.0.0:8080/app/
+Open your favourite browser and go to http://0.0.0.0:8080/angular1/app/
 
 ## How to contribute
 
