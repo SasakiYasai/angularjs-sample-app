@@ -2,11 +2,30 @@
 
 *A sample app for AngularJS 1.x and 2.x by [@franciov](//twitter.com/franciov)*
 
-## Best Practices
+## Styleguide
 
-https://github.com/franciov/angular2-sample-app/labels/best%20practice
+This sample app is following this styleguide:
 
-## How to run the app (angular2)
+https://github.com/franciov/angularjs-sample-app/labels/styleguide
+
+based on this project:
+
+https://github.com/johnpapa/angular-styleguide
+
+## How to run the sample app
+
+### Angular 1
+
+Run a local HTTP server:
+
+```sh
+$ npm install -g http-server
+$ http-server
+```
+
+Open your favourite browser and go to http://0.0.0.0:8080/angular1/
+
+### Angular 2
 
 Please note that Angular 2 is based on Typescript, so make sure you install tsd:
 
@@ -31,7 +50,7 @@ $ npm install -g http-server
 $ http-server
 ```
 
-Open your favourite browser and go to http://0.0.0.0:8080/angular1/
+Open your favourite browser and go to http://0.0.0.0:8080/angular2/
 
 ## How to contribute
 
