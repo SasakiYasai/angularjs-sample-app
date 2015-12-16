@@ -12,26 +12,31 @@ based on this project:
 
 https://github.com/johnpapa/angular-styleguide
 
+## Configuration
+
+```sh
+npm install
+```
+
 ## How to run the sample app
 
 ### Angular 1
 
-Run a local HTTP server:
+Run the following command to start the app:
 
 ```sh
-$ npm install -g http-server
-$ http-server
+gulp start
 ```
 
-Open your favourite browser and go to http://0.0.0.0:8080/angular1/
+Open your favourite browser and go to http://0.0.0.0:8001/
 
 ### Angular 2
 
 Please note that Angular 2 is based on Typescript, so make sure you install tsd:
 
 ```sh
-$ npm install -g tsd@^0.6.0
-$ tsd install angular2 es6-promise rx rx-lite
+npm install -g tsd@^0.6.0
+tsd install angular2 es6-promise rx rx-lite
 ```
 
 This will generate the folder `typings`, to be moved into the `angular2` folder.
@@ -39,18 +44,17 @@ This will generate the folder `typings`, to be moved into the `angular2` folder.
 Make sure you run tsc to create js source files:
 
 ```sh
-$ npm install -g typescript@^1.5.0
-$ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators app/angular2/app/*.ts
+npm install -g typescript@^1.5.0
+tsc --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators app/angular2/app/*.ts
 ```
 
-Finally, run a local HTTP server:
+Finally, run the following command to start the app:
 
 ```sh
-$ npm install -g http-server
-$ http-server
+gulp start
 ```
 
-Open your favourite browser and go to http://0.0.0.0:8080/angular2/
+Open your favourite browser and go to http://0.0.0.0:8002/
 
 ## How to contribute
 
