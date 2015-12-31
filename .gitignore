@@ -1,3 +1,4 @@
 angular2/typings
 angular2/**/*.js
 .DS_Store
+node_modules
