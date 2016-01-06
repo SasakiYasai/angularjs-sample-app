@@ -20,13 +20,16 @@ npm install
 
 ## How to run the sample app
 
-### Angular 1
-
-Run the following command to start the app:
+### How to run the app
 
 ```sh
 cd angular1
 gulp start
 ```
 
-Follow the instructions
+### How to run the tests
+
+```sh
+gulp test
+```
+
