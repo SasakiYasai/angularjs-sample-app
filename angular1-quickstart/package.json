@@ -1,0 +1,15 @@
+{
+  "name": "angular1-quickstart",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.8"
+  },
+  "devDependencies": {
+    "lite-server": "^1.3.1"
+  }
+}
