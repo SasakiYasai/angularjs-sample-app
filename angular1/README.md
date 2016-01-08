@@ -4,21 +4,13 @@
 
 ### Styleguide
 
-This sample app is following this styleguide:
-
-https://github.com/franciov/angularjs-sample-app/labels/styleguide
-
-based on this project:
-
-https://github.com/johnpapa/angular-styleguide
+This sample app is following [this styleguide](https://github.com/franciov/angularjs-sample-app/labels/styleguide) based mainly on [John Papa's Angular Styleguide](https://github.com/johnpapa/angular-styleguide):
 
 ## Configuration
 
 ```sh
 npm install
 ```
-
-## How to run the sample app
 
 ### How to run the app
 
@@ -32,4 +24,3 @@ gulp start
 ```sh
 gulp test
 ```
-
