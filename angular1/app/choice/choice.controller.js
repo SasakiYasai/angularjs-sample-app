@@ -1,23 +1,23 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('sampleApp')
-        .controller('ChoiceController', ChoiceController);
+  angular
+    .module('sampleApp')
+    .controller('ChoiceController', ChoiceController);
 
-    ChoiceController.$inject = ['$log'];
+  ChoiceController.$inject = ['$log'];
 
-    /* @ngInject */
-    function ChoiceController($log) {
-        var vm = this;
-        vm.title = 'ChoiceController';
+  /* @ngInject */
+  function ChoiceController($log) {
+    var vm = this;
+    vm.title = 'ChoiceController';
 
-        activate();
+    activate();
 
-        ////////////////
+    ////////////////
 
-        function activate() {
-        	$log.log('ChoiceController.activate()');
-        }
+    function activate() {
+      $log.log('ChoiceController.activate()');
     }
+  }
 })();
