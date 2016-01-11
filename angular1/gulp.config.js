@@ -20,7 +20,7 @@ module.exports = function(params) {
     var options = {
       files: [].concat(
         nodeModules + '/angular/angular.js',
-        nodeModules + '/angular-route/angular-route.js',
+        nodeModules + '/angular-ui-router/release/angular-ui-router.js',
         nodeModules + '/angular-mocks/angular-mocks.js',
         clientApp + '**/*.module.js',
         clientApp + '**/*.js'

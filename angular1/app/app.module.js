@@ -3,6 +3,6 @@
 
   angular
     .module('sampleApp', [
-      'ngRoute'
+      'ui.router'
     ]);
 })();

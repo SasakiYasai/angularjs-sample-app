@@ -5,23 +5,22 @@
     .module('sampleApp')
     .config(config);
 
-  function config($routeProvider) {
+  function config($stateProvider, $urlRouterProvider) {
 
-    $routeProvider
-      .when('/attractor', {
-        // controller: 'AttractorController',
+    $urlRouterProvider.otherwise('attractor');
+
+    $stateProvider
+      .state('attractor', {
+        url: '/attractor',
         templateUrl: 'app/attractor/attractor.html'
       })
-      .when('/choice', {
-        // controller: 'ChoiceController',
+      .state('choice', {
+        url: '/choice',
         templateUrl: 'app/choice/choice.html'
       })
-      .when('/recap', {
-        // controller: 'RecapController',
+      .state('recap', {
+        url: '/recap',
         templateUrl: 'app/recap/recap.html'
-      })
-      .otherwise({
-        redirectTo: '/attractor'
       });
   }
 
