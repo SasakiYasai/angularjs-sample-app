@@ -10,7 +10,7 @@
   /* @ngInject */
   function AttractorController($log) {
     var vm = this;
-    vm.title = 'AttractorController';
+    vm.title = 'Welcome!';
 
     activate();
 

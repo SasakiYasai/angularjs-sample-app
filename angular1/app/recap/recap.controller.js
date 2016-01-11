@@ -10,7 +10,7 @@
   /* @ngInject */
   function RecapController($log) {
     var vm = this;
-    vm.title = 'RecapController';
+    vm.title = 'Thank you!';
 
     activate();
 

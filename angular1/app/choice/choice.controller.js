@@ -5,12 +5,14 @@
     .module('sampleApp')
     .controller('ChoiceController', ChoiceController);
 
-  ChoiceController.$inject = ['$log'];
+  ChoiceController.$inject = ['$log', '$location'];
 
   /* @ngInject */
-  function ChoiceController($log) {
+  function ChoiceController($log, $location) {
     var vm = this;
-    vm.title = 'ChoiceController';
+    
+    vm.title = 'Choose';
+    vm.options = ['one', 'two', 'three', 'four', 'five'];
 
     activate();
 

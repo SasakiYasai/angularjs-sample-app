@@ -18,6 +18,10 @@
         url: '/choice',
         templateUrl: 'app/choice/choice.html'
       })
+      .state('choice.list', {
+        url: '/list',
+        templateUrl: 'app/choice/choice.list.html'
+      })
       .state('recap', {
         url: '/recap',
         templateUrl: 'app/recap/recap.html'

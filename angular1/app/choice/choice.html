@@ -1,5 +1,6 @@
 <div ng-controller="ChoiceController as choice">
-  {{choice.title}}
-</div>
+  <h3>{{choice.title}}</h3>
 
-<a ui-sref="recap">Choose</a>
+  <a ui-sref="choice.list">Show options</a>
+  <div ui-view></div>
+</div>
