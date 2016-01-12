@@ -10,9 +10,7 @@
   /* @ngInject */
   function ChoiceController($log, $location) {
     var vm = this;
-    
     vm.title = 'Choose';
-    vm.options = ['one', 'two', 'three', 'four', 'five'];
 
     activate();
 
