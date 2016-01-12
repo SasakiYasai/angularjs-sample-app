@@ -15,7 +15,6 @@ npm install
 ### How to run the app
 
 ```sh
-cd angular1
 gulp start
 ```
 

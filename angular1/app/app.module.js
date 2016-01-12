@@ -1,8 +1,8 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('sampleApp', [
-            'ngRoute'
-        ]);
+  angular
+    .module('sampleApp', [
+      'ui.router'
+    ]);
 })();

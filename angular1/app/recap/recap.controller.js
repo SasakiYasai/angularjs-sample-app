@@ -1,23 +1,23 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('sampleApp')
-        .controller('RecapController', RecapController);
+  angular
+    .module('sampleApp')
+    .controller('RecapController', RecapController);
 
-    RecapController.$inject = ['$log'];
+  RecapController.$inject = ['$log'];
 
-    /* @ngInject */
-    function RecapController($log) {
-        var vm = this;
-        vm.title = 'RecapController';
+  /* @ngInject */
+  function RecapController($log) {
+    var vm = this;
+    vm.title = 'Thank you!';
 
-        activate();
+    activate();
 
-        ////////////////
+    ////////////////
 
-        function activate() {
-        	$log.log('RecapController.activate()');
-        }
+    function activate() {
+      $log.log('RecapController.activate()');
     }
+  }
 })();

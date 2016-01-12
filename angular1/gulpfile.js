@@ -23,28 +23,28 @@ gulp.task('test', function(done) {
  * @return {undefined}
  */
 function startTests(singleRun, done) {
-    var child;
-    var excludeFiles = [];
-    var KarmaServer = require('karma').Server;
+  var child;
+  var excludeFiles = [];
+  var KarmaServer = require('karma').Server;
 
-    new KarmaServer({
-        configFile: __dirname + '/karma.conf.js',
-        exclude: excludeFiles,
-        singleRun: !!singleRun
-    }, karmaCompleted).start();
+  new KarmaServer({
+    configFile: __dirname + '/karma.conf.js',
+    exclude: excludeFiles,
+    singleRun: !!singleRun
+  }, karmaCompleted).start();
 
-    ////////////////
+  ////////////////
 
-    function karmaCompleted(karmaResult) {
-        console.log('Karma completed');
-        if (child) {
-            console.log('shutting down the child process');
-            child.kill();
-        }
-        if (karmaResult === 1) {
-            done('karma: tests failed with code ' + karmaResult);
-        } else {
-            done();
-        }
+  function karmaCompleted(karmaResult) {
+    console.log('Karma completed');
+    if (child) {
+      console.log('shutting down the child process');
+      child.kill();
     }
+    if (karmaResult === 1) {
+      done('karma: tests failed with code ' + karmaResult);
+    } else {
+      done();
+    }
+  }
 }

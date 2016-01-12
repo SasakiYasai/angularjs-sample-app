@@ -1,28 +1,31 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('sampleApp')
-        .config(config);
+  angular
+    .module('sampleApp')
+    .config(config);
 
-    function config($routeProvider) {
+  function config($stateProvider, $urlRouterProvider) {
 
-		$routeProvider
-			.when('/attractor', {
-				// controller: 'AttractorController',
-				templateUrl: 'app/attractor/attractor.html'
-			})
-			.when('/choice', {
-				// controller: 'ChoiceController',
-				templateUrl: 'app/choice/choice.html'
-			})
-			.when('/recap', {
-				// controller: 'RecapController',
-				templateUrl: 'app/recap/recap.html'
-			})
-			.otherwise({
-				redirectTo: '/attractor'
-			});    	
-    }
+    $urlRouterProvider.otherwise('attractor');
+
+    $stateProvider
+      .state('attractor', {
+        url: '/attractor',
+        templateUrl: 'app/attractor/attractor.html'
+      })
+      .state('choice', {
+        url: '/choice',
+        templateUrl: 'app/choice/choice.html'
+      })
+      .state('choice.list', {
+        url: '/list',
+        templateUrl: 'app/choice/choice.list.html'
+      })
+      .state('recap', {
+        url: '/recap',
+        templateUrl: 'app/recap/recap.html'
+      });
+  }
 
 })();
