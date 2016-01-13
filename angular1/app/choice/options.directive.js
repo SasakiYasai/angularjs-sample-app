@@ -18,7 +18,7 @@
       controller: OptionsController,
       controllerAs: 'vm',
       link: link,
-      restrict: 'EA',
+      restrict: 'E',
       scope: {},
       templateUrl: function(el, attr) {
         console.log(el);
