@@ -20,7 +20,11 @@
       link: link,
       restrict: 'EA',
       scope: {},
-      templateUrl: 'app/choice/options.directive.html'
+      templateUrl: function(el, attr) {
+        console.log(el);
+        console.log(attr);
+        return 'app/choice/options-' + attr.type + '.directive.html';
+      }
     };
     return directive;
 
