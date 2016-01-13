@@ -9,7 +9,7 @@
 
   /* @ngInject */
   function SampleOptions() {
-    // Usage: <sample-options type="list"></sample-options>
+    // Usage: <sample-options type="list" info="[array]"></sample-options>
     //
     // Creates: a list of options
     //
@@ -19,7 +19,9 @@
       controllerAs: '$options',
       link: link,
       restrict: 'E',
-      scope: {},
+      scope: {
+        data: '=info'
+      },
       templateUrl: function(el, attr) {
         console.log('directive templateUrl function(el, attr)');
         console.log(el);
@@ -41,8 +43,7 @@
 
   /* @ngInject */
   function OptionsController() {
-    var vm = this;
-    vm.data = ['one', 'two', 'three', 'four', 'five'];
+    console.log('OptionsController');
   }
 
 })();

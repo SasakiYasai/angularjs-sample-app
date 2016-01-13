@@ -11,6 +11,8 @@
   function ChoiceController($log, $location) {
     var vm = this;
     vm.title = 'Choose';
+    vm.cityOptions = ['Rome', 'Amsterdam', 'Hamburg', 'Barcelona', 'Paris', 'London', 'Berlin', 'New York', 'San Francisco'];
+    vm.countryOptions = ['Italy', 'Netherland', 'Germany', 'Spain', 'France', 'UK', 'United States'];
 
     activate();
 
